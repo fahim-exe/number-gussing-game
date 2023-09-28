@@ -27,14 +27,14 @@ def guess_the_number(level:str):
         if counter==0 and level.lower()=="easy":            
             print(f"You have {ez-counter} attempts to guess the number.")
             user = int(input("Make a guess: "))
-            counter +=1
+            counter+=1
 
         
         if counter==0 and level.lower()=="hard":
-            counter+=1
+            
             print(f"You have {hr-counter} attempts to guess the number.")
             user = int(input("Make a guess: "))
-            counter +=1
+            counter+=1
 
 
         
@@ -48,7 +48,8 @@ def guess_the_number(level:str):
                 if counter>9 and level.lower()=="easy":
                     print("You've run out of guesses, you lose.")
                     break
-                if counter>5 and level.lower()=="hard":
+
+                if counter>4 and level.lower()=="hard":
                     print("You've run out of guesses, you lose.")
                     break
                 

@@ -22,6 +22,8 @@ while True:
         Guess.guess_the_number(level)
 
         level = input("Want to go again???? Type 'y' to go again or 'q' to quit the game.")
+        if level.lower()=="q":
+            exit()
 
     else:
         print("Please enter a valid level")
